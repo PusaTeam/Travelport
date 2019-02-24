@@ -1,0 +1,22 @@
+@include products-main;
+.main__content__text1 {
+    margin-top: -40px;
+}
+.smartpoint{
+    margin: 5% 0;
+}
+  @media(max-width:991px) {
+      .smartpoint {
+          margin-left: 15%;
+      }
+  }
+  @media(max-width:767px) {
+      .smartpoint {
+          margin-left: 30%;
+      }}
+.special{
+margin-left: -15px;
+}
+.text2__title{
+    margin-bottom: 15px;
+}

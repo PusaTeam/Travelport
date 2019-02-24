@@ -1,0 +1,27 @@
+@include products-main;
+
+.text2__title{
+    margin: 15px;
+}
+.main__bottom{
+    margin-top: -20px;
+}
+
+.img__link:hover .smartpoint{
+        border-bottom: 1px dashed $main-color;
+}
+.smartpoint{
+    margin: 0;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+.smartpoint2 {
+    margin-top: 15%;
+}
+
+.main__content__text1{
+    padding-top: 5px;
+}
+.text2__title{
+    margin-top: 30px;
+}

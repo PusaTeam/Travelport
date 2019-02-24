@@ -1,12 +1,26 @@
 @include products-main;
 
-.main__content__text1{
-    margin-bottom: 30px;
-}
-.text2__title{
-    margin: 15px;
+
+.text2__title {
+    margin-bottom: 15px;
     line-height: 25px;
+    text-align: center;
 }
-.main__bottom{
+
+.left__sidebar__menu {
+    margin-top: 15px;
+}
+
+.main__bottom {
     margin-top: -20px;
+}
+
+.main__content__text>span {
+    color: $main-color;
+    @include Roboto(700);
+    font-size: 15px;
+}
+.smartpoint{
+    width: 80%;
+    margin: 0 10%;
 }

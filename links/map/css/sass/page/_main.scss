@@ -1,0 +1,23 @@
+@include products-main;
+.map{
+    max-width: 1140px;
+    margin: auto;
+}
+.title {
+    margin-bottom: 20px;
+    @include Roboto(700);
+    padding-left: 30px;
+    font-size: 25px;
+    margin-top: 50px;
+    color: $main-color;
+}
+.ul1, .ul2, .ul3{
+    font-size: 17px;
+}
+li{
+    padding: 5px;
+    
+}
+.travelport{
+margin-bottom: 15px;
+}

@@ -1,0 +1,44 @@
+body{
+    @include Roboto(400);
+    height: 100%;
+}
+
+
+a {
+    color: $main-color;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    display: block
+}
+
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.dropdown-menu{
+      -webkit-animation-name: menu;
+      animation-name: menu;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      overflow: hidden;
+}
+
+
+

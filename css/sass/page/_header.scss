@@ -1,0 +1,183 @@
+header {
+    max-width: 1140px;
+    margin: auto
+}
+
+.header__top{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    @include Pt(400)
+}
+
+.header__top__nav>ul>li{
+    display: inline-block;
+    @include Roboto(400);
+    font-size: 17px;
+    padding-bottom: 9px;
+    padding-right: 15px
+        
+}
+.header__top__nav>ul>li:last-child{
+    padding-right: 0px
+}
+.header__top__nav>ul{
+   margin-right: 50px;
+    float: right;
+    border-bottom: 1px solid black;
+    padding-bottom: 1px;
+}
+.header__top__li{
+    text-align: center
+}
+.header__top__li>a{  
+    position: relative;
+    padding:7px;
+}
+
+.header__top__li>a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 101%;
+    height: 1px;
+    opacity: 0;
+    background: -webkit-linear-gradient(left, $main-color 0%, #7abd30 100%);
+    background: linear-gradient(to right, $main-color 0%, #7abd30 100%);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;}
+
+.header__top__li>a:hover:after,
+.header__top__li>a.active__link:after {
+    height: 6px;
+    opacity: 1;
+}
+.header__top__li>a:hover:after{
+    
+}
+
+
+
+@media (max-width: 767px ){
+    .header__top__logo{
+        margin: auto;
+        width: 50vw;
+        padding-bottom: 30px;
+    }
+    .header__top__nav>ul{
+        width: 100%;
+        float: none; 
+        text-align: center;
+        padding-left: 0;
+        font-size: 30px;
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .header__top__logo {
+        margin: auto;
+        width: 70vw;
+        padding-bottom: 30px;
+    }
+
+}
+
+
+.bot__menu {
+    padding-left: 50px;
+    @include Pt(400)
+}
+
+.bot__menu__li {
+    display: inline-block;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.bot__menu>li>a {
+    font-size: 20px
+}
+
+.bot__menu>li>a:hover {
+    background-color: $main-color;
+    color: #fff;
+}
+
+
+.bot__menu:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 4px;
+    background: -webkit-linear-gradient(left, $main-color 0%, #7abd30 100%);
+    background: linear-gradient(to right, $main-color 0%, #7abd30 100%);
+}
+
+.products {
+    text-align: center;
+    background-color: #fdfdfd;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.nav .nav-link .open>a,
+.nav .open>a:focus,
+.nav-link .nav .open>a:hover {
+    background-color: rgba(175, 221, 247, 0.657);
+    border-color: #000000;
+    color: black
+}
+
+
+.products>a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+        line-height: 1.15;
+}
+
+
+.products>a:last-child {
+    border-bottom: none
+}
+
+.products>a:hover {
+    background-color: $main-color;
+    color: #fff;
+    @include Pt(400)
+}
+
+@media (max-width: 767px) {
+    .bot__menu>li>a {
+        font-size: 17px;
+        text-align: center;
+
+    }
+
+    .nav-pills>li {
+        float: none;
+        display: inline-block;
+        padding: 0;
+        margin: auto;
+    }
+
+    .bot__menu {
+        padding: 0;
+        text-align: center;
+    }
+
+}
+
+
+
+.header__bot {
+    margin-bottom: 10px
+}
+
+
